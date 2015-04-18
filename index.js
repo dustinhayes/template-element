@@ -16,7 +16,6 @@ module.exports = function templateElement(html, data) {
   } else if (data === false) {
     return createElement({});
   } else {
-    console.log('test');
     return createElement;
   }
 };
