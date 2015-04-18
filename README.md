@@ -7,12 +7,12 @@
 ```javascript
 var template = require('template-element');
 
-var media = `
+var media = template(`
   <div class="media">
     <span class="image">{avatar}</span>
     <span class="text">{bio}</span>
   </div>
-`;
+`);
 
 var user = {
   avatar: '...',
