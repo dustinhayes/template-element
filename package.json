@@ -1,0 +1,40 @@
+{
+  "name": "template-element",
+  "version": "1.0.0",
+  "description": "Minimal module to create a template -> give it some data -> get a dom element",
+  "main": "index",
+  "scripts": {
+    "test": "jshint . && zuul --local 8080 --ui tape -- test/index.js",
+    "build": "browserify -s templateElement index.js | uglifyjs > dist/templateElement.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dustinhayes/template-element.git"
+  },
+  "keywords": [
+    "template",
+    "element",
+    "create-element",
+    "new-element",
+    "dom-element",
+    "dom",
+    "browser"
+  ],
+  "author": "Dustin Hayes <dustinmichaelh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dustinhayes/template-element/issues"
+  },
+  "homepage": "https://github.com/dustinhayes/template-element",
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "jshint": "^2.7.0",
+    "tape": "^4.0.0",
+    "uglify-js": "^2.4.20",
+    "zuul": "^2.1.1"
+  },
+  "dependencies": {
+    "global": "^4.3.0",
+    "interpolate": "^0.1.0"
+  }
+}
