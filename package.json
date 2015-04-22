@@ -5,7 +5,7 @@
   "main": "index",
   "scripts": {
     "test": "jshint . && zuul --local 8080 --ui tape -- test/index.js",
-    "travis-test": "jshint . && zull -- test/index.js",
+    "travis-test": "jshint . && zuul -- test/index.js",
     "build": "browserify -s templateElement index.js | uglifyjs > dist/templateElement.js"
   },
   "repository": {
