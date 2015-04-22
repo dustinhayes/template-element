@@ -7,19 +7,26 @@
 ```javascript
 var template = require('template-element');
 
-var media = template(`
+var mediaTemp = template(`
   <div class="media">
-    <span class="image">{avatar}</span>
+    <img class="image" src={avatar} />
     <span class="text">{bio}</span>
   </div>
 `);
 
 var user = {
-  avatar: '...',
-  bio: '...'
+  avatar: 'http://lorempixel.com/40/40',
+  bio: 'Hi, I am a beautiful smelly cat'
 };
 
-element.appendChild(media(user));
+mediaTemp(user);
+
+/**
+ *  <div class="media">
+ *    <img class="image" src="http://lorempixel.com/40/40" />
+ *    <span class="text">Hi, I am a beautiful smelly cat</span>
+ *  </div>
+ */
 ```
 
 # License 
