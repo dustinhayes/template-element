@@ -6,7 +6,7 @@ var interpolate = require('interpolate');
 module.exports = function templateElement(html, data) {
   var template = document.createElement('template');
 
-  function interpolateElement(data) {
+  function interpolatElement(data) {
     template.innerHTML = interpolate(html, data);
     return template.content.firstElementChild;
   }

@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '0.12'
+script: npm run travis-test
+env:
+  global:
+  - secure: pRmxXwUwR3Bc2Lse/Pkn6FvRwRGhO42RyzYQIV4dSQvXCTNaKFrNJuVLeyjPtDXzEgOTYLgL3FApyaUFQMItcilKsgiqK4OkQf09m0lN53itWFz1JAv/MWU1s2tqnu2npoDxPH9JNvuKJ2hz2Qguxls9IzpKAguukSffU1t+arQ=
+  - secure: HhVwGU5q4HJwbAERp8nuD7sDKrAG4f1vDrNWt+qVIcJczJCEqmq1ldColYSW4tGR57NZh37/TFGwx0Tk5QvCU5gXKh5CZ5vpMWHlJKNS1ZHP+B2PUAbdaNntKBlVa6xMJ79MQmhU/NgOfymjL52z/QzpWZvmgR73Ie75UQw8xvc=
